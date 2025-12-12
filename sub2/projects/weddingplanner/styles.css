@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+  color: #137279;
+}
+
+.result {
+  text-align: center; 
+}
+
+.img1{
+ display: block;
+  margin: auto;
+  width: 50%;
+}
