@@ -1,0 +1,341 @@
+#title {
+  background-color: rgb(30, 93, 80);
+  color: rgb(230, 226, 213);
+  position: relative;
+  z-index: 1;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: rgb(230, 226, 213);
+  z-index: 100;
+}
+
+h2 {
+  color: rgb(230, 226, 213);
+  font-family: "Montserrat";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: rgb(230, 226, 213);
+}
+
+p {
+  color: rgb(230, 226, 213);
+}
+
+/* Navigation Bar */
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  font-family: "Ubuntu";
+  font-weight: bold;
+  font-size: 36px;
+  padding: 8px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.navbar-brand {
+  width: 100%;
+  background: rgb(19, 72, 62);
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: rgb(230, 226, 213);
+  padding-left: 3%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-right: 3%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  z-index: 9999;
+}
+/* Title Image */
+#title h1 {
+  position: absolute;
+  margin-top: 7%;
+  left: 8.2%;
+  font-size: 6em;
+  transform: translate(-4%, -20%);
+  color: rgb(235, 124, 32);
+  z-index: 10;
+  background-color: rgba(7, 63, 52, 0.785);
+}
+
+.background-title-image {
+  width: 100%;
+  transform: translate(0%, -15%);
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+}
+.title-image {
+  width: 60%;
+  transform: rotate(20deg);
+  position: absolute;
+  z-index: 1;
+}
+
+/* Poster Sections */
+
+#posters {
+  margin-top: 15%;
+  padding-top: 4%;
+  text-align: center;
+  background: rgb(9, 47, 40);
+  position: relative;
+  z-index: 2;
+}
+
+#posters .carousel-item {
+  padding: 3% 15%;
+  color: rgb(230, 226, 213);
+  background: rgb(9, 47, 40);
+}
+
+.poster-image {
+  width: 50%;
+}
+
+/* BOTAN */
+
+#botan h2 {
+  text-align: center;
+}
+#botan {
+  padding-top: 4%;
+  text-align: center;
+  background: rgb(9, 47, 40);
+  position: relative;
+  z-index: 2;
+}
+
+.botan-image {
+  padding-left: 20%;
+  margin-top: 10%;
+  width: 100%;
+}
+
+.botan-imagei {
+  padding-left: 20%;
+  margin-top: 1%;
+  width: 100%;
+}
+
+.botan-imageir {
+  padding-right: 20%;
+  width: 100%;
+}
+
+#botan .row {
+  display: flex;
+  align-items: center;
+}
+
+#botan p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(230, 226, 213);
+}
+
+/* LION */
+#lion h2 {
+  text-align: center;
+}
+#lion {
+  padding-top: 3%;
+  text-align: center;
+  background: rgb(9, 47, 40);
+  position: relative;
+  z-index: 2;
+}
+
+.lion-image {
+  padding-right: 20%;
+  margin-top: 10%;
+  width: 100%;
+}
+
+.lion-imagei {
+  padding-right: 20%;
+  margin-top: 1%;
+  width: 100%;
+}
+
+.lion-imageir {
+  padding-left: 20%;
+  width: 100%;
+}
+
+#lion .row {
+  display: flex;
+  align-items: center;
+}
+
+#lion p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(230, 226, 213);
+}
+
+/* GRAPHICS */
+#graphics {
+  padding-top: 4%;
+  text-align: center;
+  background: rgb(9, 47, 40);
+  position: relative;
+  z-index: 2;
+}
+
+#graphics .carousel-item {
+  padding: 3% 15%;
+  color: rgb(230, 226, 213);
+  background: rgb(9, 47, 40);
+}
+
+.graphic-image {
+  width: 50%;
+}
+
+/* Footer Section */
+
+#footer {
+  padding: 2% 15%;
+  text-align: center;
+  background-color: rgb(30, 93, 80);
+  color: rgb(230, 226, 213);
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+/* Media Query Section */
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+/* Initial state: invisible and slightly moved up */
+.fade-in-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition for both properties */
+}
+
+/* State when in view: fully visible and in original position */
+.fade-in-text.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Services Section */
+
+.service-title {
+  text-align: center;
+  padding-bottom: 2%;
+  z-index: 10;
+}
+
+#services {
+  margin-top: 30%;
+  padding: 4% 10%;
+  background-color: rgb(30, 93, 80);
+  position: relative;
+}
+
+.service-box {
+  text-align: center;
+  padding: 5%;
+}
+
+.icon {
+  color: #bc5e2f;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ecac8c;
+}
