@@ -1,0 +1,272 @@
+#title {
+  background-color: rgb(30, 93, 80);
+  color: rgb(230, 226, 213);
+  position: relative;
+  z-index: 1;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: rgb(230, 226, 213);
+  z-index: 100;
+}
+
+h2 {
+  color: rgb(230, 226, 213);
+  font-family: "Montserrat";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: rgb(230, 226, 213);
+}
+
+p {
+  color: rgb(230, 226, 213);
+}
+
+/* Navigation Bar */
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  font-family: "Ubuntu";
+  font-weight: bold;
+  font-size: 36px;
+  padding: 8px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.navbar-brand {
+  width: 100%;
+  background: rgb(19, 72, 62);
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: rgb(230, 226, 213);
+  padding-left: 3%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-right: 3%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  z-index: 9999;
+}
+
+/* Title Image */
+
+#title h1 {
+  position: absolute;
+  margin-top: 7%;
+  left: 31.1%;
+  font-size: 6em;
+  transform: translate(-20%, -20%);
+  color: rgb(235, 124, 32);
+  z-index: 10;
+  background-color: rgba(7, 63, 52, 0.785);
+}
+
+.background-title-image {
+  width: 100%;
+  transform: translate(0%, -15%);
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+}
+.title-image {
+  width: 60%;
+  transform: rotate(20deg);
+  position: absolute;
+  z-index: 1;
+}
+
+/* ART */
+
+#art h2 {
+  text-align: center;
+}
+#art {
+  margin-top: 15%;
+  padding-top: 4%;
+  text-align: center;
+  background: rgb(9, 47, 40);
+  position: relative;
+  z-index: 2;
+}
+
+.art-image-1 {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 100%;
+}
+
+.art-image-2a {
+  margin-left: 20%;
+  margin-right: 5%;
+  padding-left: 15%;
+  margin-bottom: 7%;
+  width: 70%;
+}
+.art-image-2b {
+  margin-left: 5%;
+  margin-right: 20%;
+  padding-right: 15%;
+  margin-bottom: 7%;
+  width: 72%;
+}
+.art-image-3 {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 10%;
+  width: 100%;
+}
+
+.art-image-3a {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 10.8%;
+  width: 102%;
+}
+
+.art-image-4a {
+  margin-left: 10%;
+  padding-right: 5%;
+  margin-bottom: 7%;
+  width: 90%;
+}
+.art-image-4b {
+  margin-right: 10%;
+  padding-left: 5%;
+  margin-bottom: 7%;
+  width: 90%;
+}
+.art-image-5 {
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-bottom: 7%;
+  width: 100%;
+}
+
+#art .row {
+  display: flex;
+  align-items: center;
+}
+
+#art p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(230, 226, 213);
+}
+
+/* Footer Section */
+
+#footer {
+  padding: 2% 15%;
+  text-align: center;
+  background-color: rgb(30, 93, 80);
+  color: rgb(230, 226, 213);
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+/* Media Query Section */
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+/* Initial state: invisible and slightly moved up */
+.fade-in-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition for both properties */
+}
+
+/* State when in view: fully visible and in original position */
+.fade-in-text.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
