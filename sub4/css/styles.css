@@ -1,0 +1,187 @@
+#title {
+  background-color: rgb(30, 93, 80);
+  color: rgb(230, 226, 213);
+  position: relative;
+  z-index: 1;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: rgb(230, 226, 213);
+  z-index: 100;
+}
+
+h2 {
+  color: rgb(230, 226, 213);
+  font-family: "Montserrat";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: rgb(230, 226, 213);
+}
+
+p {
+  color: rgb(230, 226, 213);
+}
+
+/* Navigation Bar */
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  font-family: "Ubuntu";
+  font-weight: bold;
+  font-size: 36px;
+  padding: 8px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.navbar-brand {
+  width: 100%;
+  background: rgb(19, 72, 62);
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: rgb(230, 226, 213);
+  padding-left: 3%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-right: 3%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  z-index: 9999;
+}
+
+/* Title Image */
+
+#title h1 {
+  position: absolute;
+  margin-top: 7%;
+  left: 36%;
+  font-size: 6em;
+  transform: translate(-20%, -20%);
+  color: rgb(235, 124, 32);
+  z-index: 10;
+  background-color: rgba(7, 63, 52, 0.785);
+}
+
+.background-title-image {
+  width: 100%;
+  transform: translate(0%, -15%);
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+}
+.title-image {
+  width: 60%;
+  transform: rotate(20deg);
+  position: absolute;
+  z-index: 1;
+}
+
+/* resume */
+#resume {
+  margin-top: 15%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  text-align: center;
+  background: rgb(9, 47, 40);
+  position: relative;
+  z-index: 2;
+}
+
+/* Footer Section */
+
+#footer {
+  padding: 2% 15%;
+  text-align: center;
+  background-color: rgb(30, 93, 80);
+  color: rgb(230, 226, 213);
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+/* Media Query Section */
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
